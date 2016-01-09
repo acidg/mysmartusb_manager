@@ -121,7 +121,7 @@ def toggle_power_on_burn():
 # ------------------------------ Main ------------------------------
 
 def print_menu():
-    # os.system('clear')
+    os.system('clear')
     print("Found device: " + get_device_info())
     print("Mode " + get_emulation_mode())
     print("Port " + port)
