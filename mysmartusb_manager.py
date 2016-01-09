@@ -3,7 +3,7 @@
 import sys
 import os
 import serial
-from binascii import hexlify, unhexlify
+from binascii import unhexlify
 
 port = ""
 command_prefix = b'\xe6\xb5\xba\xb9\xb2\xb3\xa9'
@@ -91,6 +91,7 @@ def get_power_on_burn():
 def get_voltage_reading():
     return send_command("5E")
 
+
 # ----------------------------- Setter -----------------------------
 
 def set_power(on=True):
@@ -116,6 +117,7 @@ def toggle_power_on_burn():
 
     send_command("57")
 
+
 # ------------------------------ Main ------------------------------
 
 def print_menu():
@@ -128,8 +130,6 @@ def print_menu():
     print("[1] Set power off")
     print("[2] Toggle voltage\t\t\t\t" + get_voltage())
     print("[3] Toggle power on burn\t\t" + get_power_on_burn())
-
-
 
     print("\n\n[q] Quit")
 
