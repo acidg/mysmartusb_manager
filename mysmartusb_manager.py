@@ -128,7 +128,7 @@ def print_menu():
     print("Current Voltage: " + get_voltage_reading() + "V\n\n")
     print("[0] Set power on")
     print("[1] Set power off")
-    print("[2] Toggle voltage\t\t\t\t" + get_voltage())
+    print("[2] Toggle voltage\t\t\t" + get_voltage())
     print("[3] Toggle power on burn\t\t" + get_power_on_burn())
 
     print("\n\n[q] Quit")
